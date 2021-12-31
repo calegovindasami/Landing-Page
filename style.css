@@ -3,12 +3,11 @@
     font-family: GodOfWar;
     src: url(./fonts/GODOFWAR.TTF);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* Removes whitespace between div and browser edge */
 * {
     padding: 0;
     margin: 0;
-    font-family: GodOfWar;
 }
 
 /* flex all four parts of the website so they stack on each other */
@@ -37,9 +36,12 @@ a {
 
 /* Coloring background of first part of page */
 .first {
-    background-color: #1F2937;
+    background-color: #1C1D1F;
+    font-family: GodOfWar;
 }
-
+.first p {
+    font-family: 'Roboto';
+}
 /* Flexing header items so they are on a single line */
 .header {
     display: flex;
@@ -83,8 +85,9 @@ ul li:hover {
     margin-bottom: 75px;
 }
 .hero img {
-    width: 480px;
-    height: 240px;
+    width: 720px;
+    height: auto;
+    border: 5px ridge black;
 }
 .hero .text {
     max-width: 500px;
@@ -123,3 +126,136 @@ ul li:hover {
 }
 
 /* END OF FIRST SECTION OF LANDING PAGE */
+
+/* flex all the second section items */
+.second {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1f1f1f;
+}
+/* the following code is to set the measurements of the content so they display in a 2x2 manner */
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 64px;
+    gap: 32px;
+}
+
+.content img {
+    width: 720px;
+    height: 420px;
+}
+
+.content div {
+    max-width: 720px;
+    max-height: 640px;
+}
+/* ---------end of code ---------- */
+
+/* Fonts */
+.second h3{
+    font-size: 36px;
+    font-family: GodOfWar;
+}
+.second p {
+    font-family: 'Roboto';
+}
+
+/* Flexes the image and text to create a gap */
+.content div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Enlarges h2 the features text */
+.second h2 {
+    text-align: center;
+    font-family: GodOfWar;
+    font-size: 48px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+/* -------END OF SECOND SECTION */
+
+/* THIRD SECTIOM */
+.third {
+    width: 100%;
+    height: 500px;
+    background-color: #6B6B6B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: GodOfWar;
+    row-gap: 20px;
+}
+.third p {
+    font-size: 36px;
+    font-style: italic;
+}
+.third h3 {
+    align-self: flex-end;
+    font-size: 24px;
+    margin-right: 440px;
+}
+/* END OF THIRD SECTION */
+
+/* FOURTH SECTION */
+.fourth {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #CCCCCC;
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.text p {
+    font-size: 16px;
+}
+.box button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #CCCCCC;
+    border: 2px solid black;
+    color: black;
+    border-radius: 6px;
+}
+.box button:hover {
+    background-color: gainsboro;
+}
+/* END OF FOURTH SECTION */
+
+/* FOOTER SECTION */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    height: 75px;
+    color: white;
+    background-color: #1C1D1F;
+}
