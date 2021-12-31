@@ -1,0 +1,125 @@
+/* custom fonts */
+@font-face {
+    font-family: GodOfWar;
+    src: url(./fonts/GODOFWAR.TTF);
+}
+
+/* Removes whitespace between div and browser edge */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: GodOfWar;
+}
+
+/* flex all four parts of the website so they stack on each other */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FIRST SECTION OF LANDING PAGE */
+
+/* Remove underlining, bullet points and changing color of links */
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    }
+
+/* decreasing size of header logo */
+.header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Coloring background of first part of page */
+.first {
+    background-color: #1F2937;
+}
+
+/* Flexing header items so they are on a single line */
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+    max-width: 200;
+}
+
+/* Hovering animation for header links*/
+ul li:hover {
+    text-decoration: underline;
+    color: white;
+    font-weight: bolder;
+}
+/* prevents the header logo from shifting when links become bold */
+.header .links {
+    max-width: 400px;
+}
+
+/* Flexing the first part of website so the header and hero stack. */
+.first {
+    display: flex;
+    flex-direction: column;
+}
+
+/* flexing the hero and setting max-width for side by side content */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    gap: 100px;
+    margin-bottom: 75px;
+}
+.hero img {
+    width: 480px;
+    height: 240px;
+}
+.hero .text {
+    max-width: 500px;
+}
+/* Adjusting font size for hero text */
+.hero h2 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Flexing hero text for gap between text and button */
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h2 {
+    margin-bottom: 16px;
+}
+
+/* Padding button to increase click size */
+.text button {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* END OF FIRST SECTION OF LANDING PAGE */
